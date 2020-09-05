@@ -32,16 +32,23 @@ def get_filename_from_cd(cd):
 
 
 if __name__ == "__main__":
+    # change these to your need 
     show_name = "No Guns Life"
+    download_dir = pathlib.Path("E:\\torrent\\torrent_files")
+    
+    
+    
+    
+    # no change from here on 
     show_url = "https://horriblesubs.info/" + "-".join(
         [i.lower() for i in show_name.split(" ")]
     )
+    
     showid = 0
     nextid = 0
     retry = True
     retry_time = 0
     links = {}
-    download_dir = pathlib.Path("E:\\torrent\\torrent_files")
     cook = {
         "cookie": "__cfduid=dc88541bab82a80aeea5f7f66bf2b85471597159976",
     }
